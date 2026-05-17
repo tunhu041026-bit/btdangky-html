@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <style>
+    body{
+      background:#ececec;
+      font-family: Arial, sans-serif;
+    }
+
+    .register-box{
+      width: 100%;
+      max-width: 750px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      
+    }
+
+    .register-header{
+      background:#52ac2f;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    .register-header h1{
+      margin:0;
+      font-weight:bold;
+      color:black;
+    }
+
+    .register-body{
+      padding:35px;
+    }
+    textarea{
+      resize:none;
+    }
+
+    .btn-custom{
+      background:#52ac2f;
+      color:black;
+      font-weight:bold;
+      border:1px solid black;
+      margin:10px;
+      padding:10px 25px;
+    }
+
+    .btn-custom:hover{
+      background:#52ac2f;
+      color:white;
+    }
+
+    .text-center-btn{
+      text-align:center;
+    }
+  </style>
+
+
+<body>
+
+<div class="register-box">
+
+  <!-- Header -->
+  <div class="register-header">
+    <h1>Thông tin đăng ký</h1>
+  </div>
+
+  <!-- Form -->
+  <div class="register-body">
+
+    <form>
+
+      <!-- Họ tên -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Họ tên:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <input type="text"  placeholder="Nhập họ tên">
+        </div>
+      </div>
+
+      <!-- Ngày sinh -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Ngày sinh:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <input type="date">
+        </div>
+      </div>
+
+      <!-- gioitinh -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Giới tính:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <label class="radio-inline">
+            <input type="radio" name="gender"> Nam
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="gender"> Nữ
+          </label>
+        </div>
+      </div>
+
+      <!-- diachi-->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Địa chỉ:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <input type="text" placeholder="Nhập địa chỉ">
+        </div>
+      </div>
+
+      <!-- MSSV -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>MSSV:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <input type="text" placeholder="Nhập mã số sinh viên">
+        </div>
+      </div>
+
+      <!-- lop -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Lớp:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <select>
+            <option>DA24TTD</option>
+            <option>DA25TTD</option>
+            <option>DA23TTD</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- sdt-->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Số điện thoại:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <input type="tel" placeholder="Nhập số điện thoại">
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Email:</label>
+        </div>
+
+        <div class="col-sm-9">
+          <input type="email"  placeholder="Nhập email">
+        </div>
+      </div>
+
+      <!-- anh-->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Ảnh đại diện:</label>
+        </div>
+	<br>
+    <div class="input-group">
+      <span class="input-group-addon">Choose file</span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="No file choose">
+    </div>
+  	<br>
+
+      <!-- sotruong -->
+      <div class="row form-group">
+        <div class="col-sm-3">
+          <label>Sở trường:</label>
+        </div>
+
+        <div class="col-sm-9">
+
+          <label class="checkbox-inline">
+            <input type="checkbox"> Thiết kế web
+          </label>
+
+          <label class="checkbox-inline">
+            <input type="checkbox"> Lập trình web
+          </label>
+
+          <label class="checkbox-inline">
+            <input type="checkbox"> Thành thạo tiếng Trung
+          </label>
+
+        </div>
+      </div>
+
+      <!--motasoluoc -->
+      <form>
+    <div class="form-group">
+      <label for="comment">Mô tả sơ lược</label>
+      <textarea class="form-control" rows="4"></textarea>
+    </div>
+  </form>
+
+      <!-- Button -->
+      <div class="text-center-btn">
+        <button type="reset" class="btn btn-custom">Hủy bỏ</button>
+        <button type="submit" class="btn btn-custom">Đăng ký</button>
+      </div>
+
+  
+
+</div>
